@@ -20,7 +20,7 @@ open class BaseApp : Application() {
         appContext = applicationContext
         startKoin {
             androidContext(this@BaseApp)
-            modules(listOf(AppModule, apiModule, storeModule, repoModule, useCaseModule))
+            modules(listOf(AppModule, apiModule, storeModule, repoModule, useCaseModule, viewModelModule))
         }
 
     }

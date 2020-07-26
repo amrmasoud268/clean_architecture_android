@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">clean arch</string>
     <string name="default_loading_message">wait a moment</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="search_title">Search for movie by name</string>
+    <string name="photo_des">Photo Description</string>
+    <string name="label_year">Year:</string>
+    <string name="label_title">Title:</string>
+    <string name="label_genres">Genres:</string>
+    <string name="label_cast">Cast:</string>
 </resources>
