@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">clean arch</string>
+    <string name="default_loading_message">wait a moment</string>
+</resources>
