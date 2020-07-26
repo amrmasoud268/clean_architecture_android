@@ -3,7 +3,10 @@ package com.example.cleanarch.core.base
 import android.app.Application
 import android.content.Context
 import android.content.res.Configuration
+import com.example.cleanarch.core.di.*
 import com.example.cleanarch.core.utils.LocaleManager
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
 
 open class BaseApp : Application() {
 
@@ -15,6 +18,10 @@ open class BaseApp : Application() {
     override fun onCreate() {
         super.onCreate()
         appContext = applicationContext
+        startKoin {
+            androidContext(this@BaseApp)
+            modules(listOf(AppModule, apiModule, storeModule, repoModule, useCaseModule))
+        }
 
     }
 
